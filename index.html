@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM-Flow Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="label">
+        <span>mm-flow</span>
+    </div>
+    <div class="form-container">
+        <form>
+            <!-- Amount of months -->
+            <fieldset>
+                <legend>Project Duration</legend>
+                <div class="form-group">
+                    <label for="months">Amount of Months:</label>
+                    <input type="number" id="months" name="months" required>
+                </div>
+            </fieldset>
+
+            <!-- Models -->
+            <fieldset>
+                <legend>Model Quantities</legend>
+                <div class="form-group">
+                    <label for="model1">Amount of Model 1:</label>
+                    <input type="number" id="model1" name="model1" required>
+                </div>
+                <div class="form-group">
+                    <label for="model2">Amount of Model 2:</label>
+                    <input type="number" id="model2" name="model2" required>
+                </div>
+                <div class="form-group">
+                    <label for="model3">Amount of Model 3:</label>
+                    <input type="number" id="model3" name="model3" required>
+                </div>
+                <div class="form-group">
+                    <label for="model4">Amount of Model 4:</label>
+                    <input type="number" id="model4" name="model4" required>
+                </div>
+            </fieldset>
+
+            <!-- Sites -->
+            <fieldset>
+                <legend>Site Quantities</legend>
+                <div class="form-group">
+                    <label for="wl_sites">WL Sites Per Month:</label>
+                    <input type="number" id="wl_sites" name="wl_sites" required>
+                </div>
+                <div class="form-group">
+                    <label for="rf_sites">RF Sites Per Month:</label>
+                    <input type="number" id="rf_sites" name="rf_sites" required>
+                </div>
+                <div class="form-group">
+                    <label for="se_sites">SE Sites Per Month:</label>
+                    <input type="number" id="se_sites" name="se_sites" required>
+                </div>
+            </fieldset>
+
+            <!-- Prices -->
+            <fieldset>
+                <legend>Prices</legend>
+                <div class="form-group">
+                    <label for="survey_price">Survey Price:</label>
+                    <input type="number" id="survey_price" name="survey_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="transport_price">Transportation Price:</label>
+                    <input type="number" id="transport_price" name="transport_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="antenna_price">Antenna Installation/Replacement Price:</label>
+                    <input type="number" id="antenna_price" name="antenna_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="bbu_rru_price">Equipment Installation BBU+RRU (up to 3) Price:</label>
+                    <input type="number" id="bbu_rru_price" name="bbu_rru_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="rru_3_price">Equipment Installation RRU (up to 3) Price:</label>
+                    <input type="number" id="rru_3_price" name="rru_3_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="rru_6_price">Equipment Installation RRU (up to 6) Price:</label>
+                    <input type="number" id="rru_6_price" name="rru_6_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="dismantling_price">Dismantling Price:</label>
+                    <input type="number" id="dismantling_price" name="dismantling_price" required>
+                </div>
+            </fieldset>
+
+            <!-- Engineers and Salaries -->
+            <fieldset>
+                <legend>Engineer Quantities and Salaries</legend>
+                <div class="form-group">
+                    <label for="l0_rf">LC L0 RF Engineers:</label>
+                    <input type="number" id="l0_rf" name="l0_rf" required>
+                    <input type="number" id="l0_rf_salary" name="l0_rf_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l1_rf">LC L1 RF Engineers:</label>
+                    <input type="number" id="l1_rf" name="l1_rf" required>
+                    <input type="number" id="l1_rf_salary" name="l1_rf_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l0_wl">LC L0 WL Engineers:</label>
+                    <input type="number" id="l0_wl" name="l0_wl" required>
+                    <input type="number" id="l0_wl_salary" name="l0_wl_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l1_wl">LC L1 WL Engineers:</label>
+                    <input type="number" id="l1_wl" name="l1_wl" required>
+                    <input type="number" id="l1_wl_salary" name="l1_wl_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l0_se">LC L0 SE Engineers:</label>
+                    <input type="number" id="l0_se" name="l0_se" required>
+                    <input type="number" id="l0_se_salary" name="l0_se_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l1_se">LC L1 SE Engineers:</label>
+                    <input type="number" id="l1_se" name="l1_se" required>
+                    <input type="number" id="l1_se_salary" name="l1_se_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l2_tls">LC L2 TLs:</label>
+                    <input type="number" id="l2_tls" name="l2_tls" required>
+                    <input type="number" id="l2_tls_salary" name="l2_tls_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l2_dqa">LC L2 DQA:</label>
+                    <input type="number" id="l2_dqa" name="l2_dqa" required>
+                    <input type="number" id="l2_dqa_salary" name="l2_dqa_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l3_pd">LC L3 PD:</label>
+                    <input type="number" id="l3_pd" name="l3_pd" required>
+                    <input type="number" id="l3_pd_salary" name="l3_pd_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l4_pd">LC L4 PD:</label>
+                    <input type="number" id="l4_pd" name="l4_pd" required>
+                    <input type="number" id="l4_pd_salary" name="l4_pd_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l3_td">LC L3 TD:</label>
+                    <input type="number" id="l3_td" name="l3_td" required>
+                    <input type="number" id="l3_td_salary" name="l3_td_salary" placeholder="Monthly Salary" required>
+                </div>
+                <div class="form-group">
+                    <label for="l4_td">LC L4 TD:</label>
+                    <input type="number" id="l4_td" name="l4_td" required>
+                    <input type="number" id="l4_td_salary" name="l4_td_salary" placeholder="Monthly Salary" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

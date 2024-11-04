@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: black;
+}
+
+.label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 48px; /* Very big label */
+    font-weight: bold;
+    color: purple;
+}
+
+.summary-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the text inside the summary container */
+    margin-top: 50px; /* Adjust as needed to ensure visibility below the label */
+    width: 80%;
+    max-height: 80vh; /* Ensure summary fits into screen */
+    overflow-y: auto; /* Add scrollbar if summary exceeds screen height */
+}
+
+.summary-section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: purple;
+}
