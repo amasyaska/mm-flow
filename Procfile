@@ -1,1 +1,1 @@
-web: gunicorn djangowebserver.wsgi
+web: gunicorn ./djangowebserver/djangowebserver.wsgi
